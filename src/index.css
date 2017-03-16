@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.2px;
+  background: #f1f1f1;
+}
+
+.card {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 100px;
+}
+
+.button {
+    margin-bottom: 10px;
+}
+
+.columns {
+    padding-bottom: 280px;
+}
