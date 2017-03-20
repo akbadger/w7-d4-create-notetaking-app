@@ -7,20 +7,24 @@ class AddNote extends React.Component {
         
         return <div>
                     <Nav />
-                    <div className="columns">
-                        <div className="column is-8 is-offset-2">
-                            <div className="card has-text-centered">
-                                <div className="card-content">
-                                    <div className="content">
-                                         <input type="text-area"/>
-                                    
-
+                            <div className="container">
+                                    <div className="row">
+                                        <div className="col-sm-8 col-sm-offset-2">
+                                       
+                                            <textarea placeholder="Title" />
+                                            <textarea placeholder="Take a note..." className="note-body"/>
+                                            <textarea placeholder="tags" />
+                                            <button type="button" className="btn btn-default btn-block">Save</button>
+                                        
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                        </div>    
                 </div>
+                  
+                            
+                                    
+                            
+                
     }
  }
 

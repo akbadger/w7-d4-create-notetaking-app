@@ -11,24 +11,35 @@ class Notes extends React.Component {
             notes: []
         }
     }
+
+    componentWillMount() {
+        this.getNotes()
+    }
+
+    getNotes() {
+        fetch()
+        .then(response => response.json())
+        .then(notes => this.props.dispatch({type: 'NOTES_UPDATE', body: notes}))
+    }
        
     render() {
         return  <div>
+        <div className="container">
                     <Nav />
-                    <div className="columns">
-                        <div className="column is-8 is-offset-2">
-                            <div className="card has-text-centered">
-                                <div className="card-content">
-                                    <div className="content">
-                                         <a className="button is-primary"><i className="fa fa-plus" aria-hidden="true"></i></a>
-                                         <div>Take a new note.</div>
-
+                    
+                        <div className="row">
+                            <div className="column col-sm-8 col-sm-offset-2">
+                                <div className="card">
+                                    <div className="card-block text-center">
+                                         <i className="fa fa-plus fa-2x" aria-hidden="true"></i>
+                                         <div className="text-muted">Take a new note.</div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                
     }
 }
 

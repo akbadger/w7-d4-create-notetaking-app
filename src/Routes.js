@@ -15,8 +15,7 @@ const history = syncHistoryWithStore(browserHistory, store)
 // Import your Todos and Completed components here...
 import Notes from './components/Notes'
 import AddNote from './components/AddNote'
-// import Example from './components/Example'
-// import Completed from './components/Completed'
+import NoteDisplay from './components/NoteDisplay'
 
 
 // Configure routes
@@ -26,6 +25,7 @@ class Routes extends React.Component {
             <Router history={history}>
                 <Route path="/" component={Notes} />
                 <Route path="/AddNote" component={AddNote} />
+                <Route path="/NoteDisplay" component={NoteDisplay} />                
 
             </Router>
         </Provider>
@@ -33,5 +33,3 @@ class Routes extends React.Component {
 }
 
 export default Routes
-
-// <Route path="/Completed" component={Completed} />
